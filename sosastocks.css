@@ -185,7 +185,35 @@ float: left;
 	padding: 6px;
 	min-height: 30px;
 }
+.object-fit_fill {
+	-o-object-fit: fill;
+		object-fit: fill;
+}
+.object-fit_contain {
+	-o-object-fit: contain;
+		object-fit: contain;
+}
 
+.object-fit_cover {
+-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.object-fit_none {
+	-o-object-fit: none;
+	object-fit: none;
+}
+
+.object-fit_scale-down {
+	-o-object-fit: scale-down;
+	object-fit: scale-down;
+}
+
+img[class] {
+	width: 100%;
+}
 .row {
 	margin-bottom: 10px;
 }
+
+
