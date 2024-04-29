@@ -5,8 +5,11 @@
 	padding: 0;
 }
 #banner{
-	background: url(images/
-
+background: url(images/stock2);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
 body{font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
 	font-size: 100%;
 line-height: 1.0cm;
