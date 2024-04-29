@@ -63,3 +63,15 @@ font-size: 130px;
 
 }
 .banner-btn a:hover
+color: #000;
+}
+
+#sideNav{
+    width: 120px;
+    height:100vh;
+    position: fixedl;
+    right: 0;
+    top: 0;
+    background: #0061d1;
+    z-index:2;
+}
