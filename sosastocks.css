@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+#banner{
+	background: url(images/
 
 body{font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
 	font-size: 100%;
