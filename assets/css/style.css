@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+:root {
+    --color-red: #f44336;
+    --bg-cream : #fff3f3;
+}
+a {
+    text-decoration: none;
+}
+
+.video iframe{
+    padding: 5rem 5rem;
+    height: 700px;
+}
+img{
+    width: 100%;
+}
+
+
+/* ----- Header -------- */
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/Stocks1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+nav h1{
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+.nav_links{
+    flex: 1;
+    text-align: right;
+}
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav_links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform:capitalize;
+}
+
+.nav_links ul li ::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: var(--color-red);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_links ul li :hover::after{
+    width:100%;
+}
+
+/* For Centering The navigation Text content */
+.text_box{
+    width:90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text_box h3{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.text_box p{
+    font-size: 1.1rem;
+    margin: 10px 0px 40px;
+}
+.hero_btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px ;
+    font-size: 1.2rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 2s;
+}
+.hero_btn:hover{
+    border: 2px solid var(--color-red);
+    background-color: var(--color-red);
+    transition: 1s;
+    font-weight: 400;
+}
+
+/* FOR RESPONSIVE MENU BAR */
+nav .fa-solid{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text_box h1{
+        font-size: 1.5rem;
+    }
+
+    /* MENU */
+    .nav_links ul li {
+        display: block;
+    }
+    .nav_links{
+        position: fixed;
+        background: rgba(255, 0, 0, 0.902);
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        right: -120vw;
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+    }
+
+    .nav_links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    nav .fa-solid{
+        display: block;
+        color: white;
+        font-size: 2.5rem;
+        margin: 10px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+.container{
+    padding: 5rem 5rem;
+}
+.container.p-0{
+    padding-top: 0rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.row>div{
+    padding: 0.5rem;
+}
+.row .col-md-6{
+    flex-basis: 48%;
+}
+.row .col-md-12{
+    flex-basis: 99%;
+}
+.row .col-md-4{
+    flex-basis: 38%;
+}
+.row .col-md-8{
+    flex-basis: 58%;
+}
+.row .col-md-4 img{
+    width: 100%;
+}
+.row .col-md-8 h2{
+    color: var(--color-red);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ---------- Day Trading ----------  */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../images/smc-1.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+
+}
+.sub-header h2{
+    margin-top: 4rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.day-content .single{
+    margin-bottom: 2rem;
+    position: relative;
+}
+.day-content h3{
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    color: red;
+}
+.day-content .single h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-red);
+}
+.day-content .single p{
+    margin-bottom: 0.5rem;
+}
+
+/* ----- Smart Money --------  */
+.day-content h2{
+    margin: 1rem 0rem;
+    color: var(--color-red);
+    font-weight: 600;
+    font-size: 2.0rem;
+}
+
+.day-content ul{
+    padding-left: 0rem;
+    list-style: none;
+}
+.day-content ul strong{
+    font-weight: 500;
+    color: var(--color-red);
+}
+
+/* ----- Contact ----  */
+.contact .col-md-6{
+    margin: auto;
+}
+.contact input , .contact textarea{
+    padding: 1rem 0.5rem;
+    width: 100%;
+    border: 1.2px solid var(--color-red);
+    margin-bottom: 1rem;
+    outline: none;
+    font-size: 1rem;
+}
+.contact input::placeholder , .contact textarea::placeholder{
+    color: var(--color-red);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.contact input:focus , .contact textarea:focus{
+    color: red;
+    background: var(--bg-cream);
+}
+.contact .flex{
+    align-items: center;
+    justify-content: space-between;   
+}
+.contact .flex button{
+    padding: 0.5rem 1rem;
+    background: var(--color-red);
+    color: white;
+    border:none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 300ms ease-in;
+}
+.contact .flex button[type="reset"]{
+    background: green;
+}
+.contact .flex button:hover{
+    opacity: 0.8;
+}
+
+/* --- Footer ---  */
+footer{
+    background: var(--bg-cream);
+    padding: 1rem 0rem;
+    color: red;
+    text-align: center;
+}
+footer .container {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+footer .footer-flex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-red);
+}
+footer a{
+    color: red;
+}
+
+
+
+/* Media Querry --  */
+@media only screen and (max-width: 860px){
+    .container , .video iframe{
+        padding: 4rem 3rem;
+    }
+    .row .col-md-8 , .row .col-md-4 , .row .col-md-6{
+        flex-basis: 100%;
+    }
+    .row.reverse .col-md-4{
+        order: -1;
+    }
+}
+@media only screen and (max-width: 600px){
+    .container , .video iframe{
+        padding: 3rem 1rem;
+    }
+    .text_box h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-top: 4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

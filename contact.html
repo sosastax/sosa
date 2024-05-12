@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="">
-    <title>Sosa :: The Trading App</title>
+    <title>Contact Us - Sosa :: The Trading App</title>
 
     <!-- Font Awesome Cdn Link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-    <section class="header">
+    <section class="sub-header">
         <header>
             <div >
                 <nav>
@@ -39,29 +39,32 @@
                 </nav>
             </div>
 
-            <div class="text_box">
-                <h3>Welcome to Guide <br> to DayTrading with Sosa</h3>
-                <p>Mastering the Skill of Day Trading with SMC</p>
-
-                <a href="#begin" class="hero_btn">Let's Start</a>
-            </div>
+            <h2>Contact Us</h2>
         </header>
     </section>
 
-    <section class="video" id="begin">
-        <iframe width="100%" src="https://www.youtube.com/embed/lcBNWiCn1Uo?si=JnuybNxCMGVXVQYW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-
     <section>
-        <div class="container p-0">
+        <div class="container contact">
             <div class="row">
-                <div class="col-md-4">
-                    <img src="./assets/images/stock2.jpg" alt="stocks-image">
+
+                <div class="col-md-6" >
+                    <form action="https://formsubmit.co/stax.sosa1@gmail.com" method="POST">
+                        <input type="text" name="name" id="name" placeholder="Name :" required>
+                        <input type="email" name="Email" id="Email" placeholder="Email :" required>
+                        <input type="number" name="Mobile" id="Mobile" placeholder="Mobile :" required>
+                        <textarea id="message" name="Message" rows="5" placeholder="Your Message" required></textarea>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://sosastax.github.io/contact.html">
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="row flex">
+                            <button type="reset">Reset</button>
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-md-8">
-                    <h2>Join the Stax Central Community Today!</h2>
-                    <p>Ready to take your day trading to the next level? Join the Stax Central community today and gain access to a wealth of educational resources, live trading sessions, and expert insights.</p>
-                </div>
+
             </div>
         </div>
     </section>
@@ -74,7 +77,6 @@
                 <a href="./smart-money-terms.html">Smart Money & Terms</a>
                 <a href="./risk-management.html">Risk Management</a>
                 <a href="./trading-account.html">Trading Account</a>
-                <a href="./contact.html">Contact Us</a>
             </div>
             <div class="copyright">Copyright © 2024 SOSA All Rights Reserved. </div>
         </div>
